@@ -7,3 +7,12 @@
 [submodule "logistics"]
 	path = logistics
 	url = git://github.com/ewheeler/rapidsms-logistics-app.git
+[submodule "people"]
+	path = people
+	url = git://github.com/ewheeler/rapidsms-people-app.git
+[submodule "ussd"]
+	path = ussd
+	url = git://github.com/ewheeler/rapidsms-ussd-app.git
+[submodule "stringcleaning"]
+	path = stringcleaning
+	url = git://github.com/ewheeler/rapidsms-stringcleaning-app.git
