@@ -1,0 +1,5 @@
+Repository of RapidSMS apps not included in:
+http://github.com/rapidsms/rapidsms-contrib-apps-dev
+
+Each app lives in its own repository. This repository contains submodules
+linking to the latest stable (hopefully) versions of community-contributed apps.
