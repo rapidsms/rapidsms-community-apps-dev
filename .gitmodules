@@ -1,0 +1,9 @@
+[submodule "inventory"]
+	path = inventory
+	url = git://github.com/ewheeler/rapidsms-inventory-app.git
+[submodule "growthmonitoring"]
+	path = growthmonitoring
+	url = git://github.com/ewheeler/rapidsms-growthmonitoring-app.git
+[submodule "logistics"]
+	path = logistics
+	url = git://github.com/ewheeler/rapidsms-logistics-app.git
