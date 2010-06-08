@@ -3,3 +3,44 @@ http://github.com/rapidsms/rapidsms-contrib-apps-dev
 
 Each app lives in its own repository. This repository contains submodules
 linking to the latest stable (hopefully) versions of community-contributed apps.
+
+To create a repository of an existing application that preserves its history:
+# clone your rapidsms repository and name it my-rapidsms-apps
+cd my-rapidsms-apps
+# remove everything except the apps directory:
+git filter-branch --index-filter "git rm -r -f --cached --ignore-unmatch DEVELOPMENT LICENSE MANIFEST.in README lib rapidsms rapidsms.ini rs_wsgi.py setup.py utilities" --prune-empty HEAD
+git reset --hard
+git remote rm origin
+rm -rf .git/refs/original/
+git reflog expire --expire=now --all
+git gc --aggressive
+git prune
+
+# move all the apps to the root of the repository (rather than in apps/ directory)
+git filter-branch --subdirectory-filter apps HEAD
+git reset --hard
+git gc --aggressive
+git prune
+
+# copy your new my-rapidsms-apps locally and name the copy after the target app
+cd ..
+cp -R my-rapidsms-apps my-target-app
+cd my-target-app
+
+# remove everything except the target apps directory:
+git filter-branch --index-filter "git rm -r -f --cached --ignore-unmatch otherapp anotherapp thatapp" --prune-empty HEAD
+git reset --hard
+git remote rm origin
+rm -rf .git/refs/original/
+git reflog expire --expire=now --all
+git gc --aggressive
+git prune
+
+# move all the apps contents to the root of the repository (instead of in its own directory)
+git filter-branch --subdirectory-filter target-app HEAD
+git reset --hard
+git gc --aggressive
+git prune
+
+# finally, create a new repository on github and follow the instructions for adding an existing git repository
+# ... and send a link to the rapidsms mailing list so it can be added as a submodule of this repository
