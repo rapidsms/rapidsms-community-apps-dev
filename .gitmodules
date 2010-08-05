@@ -16,3 +16,9 @@
 [submodule "stringcleaning"]
 	path = stringcleaning
 	url = git://github.com/ewheeler/rapidsms-stringcleaning-app.git
+[submodule "xforms"]
+	path = xforms
+	url = git://github.com/ewheeler/rapidsms-xforms-builder-app.git
+[submodule "xmapper"]
+	path = xmapper
+	url = git://github.com/ewheeler/rapidsms-xmapper-app.git
