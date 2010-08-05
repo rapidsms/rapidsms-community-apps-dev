@@ -16,3 +16,6 @@
 [submodule "stringcleaning"]
 	path = stringcleaning
 	url = git://github.com/ewheeler/rapidsms-stringcleaning-app.git
+[submodule "decisiontree"]
+	path = decisiontree
+	url = git@github.com:dimagi/rapidsms-decisiontree-app.git
