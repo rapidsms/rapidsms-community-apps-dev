@@ -1,0 +1,1 @@
+This is the most barebones RapidSMS application ever. All it does it receive any SMS message and respond with 'hello world'.
