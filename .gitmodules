@@ -22,3 +22,6 @@
 [submodule "xmapper"]
 	path = xmapper
 	url = git://github.com/ewheeler/rapidsms-xmapper-app.git
+[submodule "questions"]
+	path = questions
+	url = git://github.com/adammck/rapidsms-questions-app.git
