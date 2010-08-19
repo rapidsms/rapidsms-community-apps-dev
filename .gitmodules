@@ -25,3 +25,6 @@
 [submodule "questions"]
 	path = questions
 	url = git://github.com/adammck/rapidsms-questions-app.git
+[submodule "xforms"]
+	path = xforms
+	url = git://github.com/nyaruka/rapidsms-xforms.git
