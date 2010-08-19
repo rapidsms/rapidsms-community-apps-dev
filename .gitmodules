@@ -19,9 +19,6 @@
 [submodule "decisiontree"]
 	path = decisiontree
 	url = git@github.com:dimagi/rapidsms-decisiontree-app.git
-[submodule "xforms"]
-	path = xforms
-        url = git://github.com/nyaruka/rapidsms-xforms.git
 [submodule "xmapper"]
 	path = xmapper
 	url = git://github.com/ewheeler/rapidsms-xmapper-app.git
