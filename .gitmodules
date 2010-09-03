@@ -31,3 +31,6 @@
 [submodule "training"]
 	path = training
 	url = git://github.com/rapidsms/rapidsms-training-app.git
+[submodule "search"]
+	path = search
+	url = git://github.com/adammck/rapidsms-search-app.git
