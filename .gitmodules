@@ -28,3 +28,6 @@
 [submodule "xforms"]
 	path = xforms
 	url = git://github.com/nyaruka/rapidsms-xforms.git
+[submodule "training"]
+	path = training
+	url = git://github.com/rapidsms/rapidsms-training-app.git
